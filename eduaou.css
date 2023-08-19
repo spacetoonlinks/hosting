@@ -108,11 +108,11 @@ section {
 }
 
 .course.css .course-info {
-  background: #32726f;
+  background: #1c7e7a;
 }
 
 .course.js .course-info {
-  background: var(--js-color);
+  background: #079992;
 }
 
 .course:hover .course-info,
