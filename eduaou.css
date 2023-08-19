@@ -1,9 +1,6 @@
      @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+
 
 :root {
   --html-color: #56cfe1;
@@ -20,17 +17,9 @@
   --mode-hover: #203297;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
-body {
-  font-family: "Muli", sans-serif;
-  width: 100vw;
-  background: var(--bg);
-  overflow-x: hidden;
-  transition: background 150ms;
-}
+
+
 
 section {
   width: 100vw;
