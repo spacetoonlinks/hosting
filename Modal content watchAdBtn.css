@@ -3,7 +3,7 @@
 
   @media only screen and (max-width:600px){
   .modal{padding-top:70%}}
-  .modal-content{position:relative;margin:auto;padding:25px;background-color:#f9f9f9;border:1px solid #888;width:90%;border-radius:5px}
+  .modal-content{position:relative;margin:auto;padding:25px;background-color:#f9f9f9;border:1px solid #888;width:50%;border-radius:5px}
 
   @media all and (orientation:landscape){
   .modal-content{width:40%}}
