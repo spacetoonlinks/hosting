@@ -37,7 +37,7 @@
 
       .modal input[type="button"] {
         padding: .5rem;
-        background: blue;
+        background: linear-gradient(to right,#d42d2e 0,#25283b 100%);
         border: none;
         border-radius: 4px;
         margin: 4px;
