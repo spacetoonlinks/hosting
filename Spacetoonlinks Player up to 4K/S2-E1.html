@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spacetoonlinks Player up to 4K</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .player__wrapper {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="player__wrapper" id="clappr"></div>
+  <script type="text/javascript" src="https://rawcdn.githack.com/spacetoonlinks/hosting/8c421377a445e47b16260ea408ebe9366672e204/Spacetoonlinks%20Player%20up%20to%204K/clapper.min.js"></script>
+  <script type="text/javascript">
+    const clappr = new Clappr.Player({
+      source: "https://ia800509.us.archive.org/33/items/ypgr-s-2-e-1/YPGR-S2-E1.mp4",
+      mute: false,
+      height: "100%",
+      width: "100%",
+      parentId: "#clappr",
+      poster: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOkKiGJydIQsUh19LZx7PlZVdgEeGZlDbMcmQzNAT6RrJHUusIRb6bGck4EwrY5xMkW-X35KVp4yz02Tfk7avO_XK5FVdAuUwVKG1vskoqhhZu5NFKwrjypAbsY3qpNRGnqxXyUgfzv58z-Mavq7ZWmUdBnEr4gASCs1I0VJRKoyr9kCSYjOtmtpI7xEgU/s1600/dd72ef1d1fad0541e85d56011be923d3de1c2a8a543f13109f22bc68b471f373._SX1440_FMwebp_.webp"
+    });
+  </script>
+</body>
+</html>
