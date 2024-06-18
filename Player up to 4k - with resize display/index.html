@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spacetoonlinks Player up to 4K</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .player__wrapper {
+      height: 100%;
+      width: 100%;
+    }
+    .video-js {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+  <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="player__wrapper">
+    <video
+      id="my-video"
+      class="video-js vjs-theme-fantasy"
+      controls
+      preload="auto"
+      poster="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhRTVPbKtxKtcZ_c6LhbK8b8-4EiahaEA72Es5u0pvp6AEXIQZXNi8R1DfJil_snaOD1G42yq9_4ggdPeBAFQI-5MLSTE8HIVDS5dwlM3eIkviIoxXtRgEfEaGhVyi_uqwRdLGrUOCZtiaKBrd1MI0Xtf7dOdJTkEO0o8Runl6xpelPb4g9i_XhbaXr46s/s1600/rider2.webp"
+      data-setup="{}"
+    >
+      <source src="https://ia800509.us.archive.org/33/items/ypgr-s-2-e-1/YPGR-S2-E1.mp4" type="video/mp4" />  
+    </video>
+  </div>
+  <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+</body>
+</html>
