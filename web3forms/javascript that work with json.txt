@@ -1,0 +1,15 @@
+<!--contact_us_link_API-->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            fetch('https://raw.githubusercontent.com/spacetoonlinks/hosting/main/contact_us_link_API.json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('contact-us').href = data.long_url;
+                })
+                .catch(error => console.error('Error fetching the URL:', error));
+        });
+    </script>
+<!--contact_us_link_API-->
+-----------------------------------------------------------------------------------------------------------
+
+<a id="contact-us" target="_blank">للإبلاغ عن مشكلة</a>
