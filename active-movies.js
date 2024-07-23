@@ -6,31 +6,29 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.json())
         .then(data => {
             data.forEach(movie => {
-                const movieItem = document.createElement('div');
-                movieItem.className = 'movie-item item';
+                const itemInner = document.createElement('div');
+                itemInner.className = 'item-inner';
 
-                movieItem.innerHTML = `
-                    <div class="item-inner">
-                        <a href="${movie.href}" class="cover">
-                            <div> 
-                                <img class="lazyload" data-src="${movie.imgSrc}" alt="${movie.altText}">
-                            </div>
-                        </a>
-                        <div class="tt-btn" data-tip="73536?/cache8c76f">
-                            <i class="fa-sharp fa-solid fa-info"></i>
+                itemInner.innerHTML = `
+                    <a href="${movie.href}" class="cover">
+                        <div> 
+                            <img class="lazyload" data-src="${movie.imgSrc}" alt="${movie.altText}">
                         </div>
-                        <div class="quality">${movie.quality}</div>
-                        <div class="detail">
-                            <div class="title">${movie.title}</div>
-                            <div class="info"> 
-                                <span class="type">${movie.type}</span> 
-                                <span>${movie.year} - ${movie.duration}</span> 
-                            </div>
+                    </a>
+                    <div class="tt-btn" data-tip="73536?/cache8c76f">
+                        <i class="fa-sharp fa-solid fa-info"></i>
+                    </div>
+                    <div class="quality">${movie.quality}</div>
+                    <div class="detail">
+                        <div class="title">${movie.title}</div>
+                        <div class="info"> 
+                            <span class="type">${movie.type}</span> 
+                            <span>${movie.year} - ${movie.duration}</span> 
                         </div>
                     </div>
                 `;
 
-                moviesContainer.appendChild(movieItem);
+                moviesContainer.appendChild(itemInner);
             });
         })
         .catch(error => console.error('Error fetching JSON data:', error));
