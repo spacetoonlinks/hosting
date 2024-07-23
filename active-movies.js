@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 movieItem.innerHTML = `
                     <div class="movie-item item">
                         <div class="item-inner">
-                            <a href="${movie.href}" class="cover">
+                            <a href="${movie.href}" target="_blank" class="cover">
                                 <div> 
                                     <img class="lazyload" data-src="${movie.imgSrc}" alt="${movie.altText}">
                                 </div>
