@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const moviesContainer = document.getElementById('movies-container');
-    const jsonUrl = 'https://rawcdn.githack.com/spacetoonlinks/hosting/a8a886b97c458596cc43d045fc5a5b11c0313a27/active-movies.json'; 
+    const jsonUrl = 'https://rawcdn.githack.com/spacetoonlinks/hosting/a8a886b97c458596cc43d045fc5a5b11c0313a27/active-movies.json';
 
     fetch(jsonUrl)
         .then(response => response.json())
@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 movieItem.className = 'movie-item item';
 
                 movieItem.innerHTML = `
-				<div class="movie-item item">    
                     <div class="item-inner">
                         <a href="${movie.href}" class="cover">
                             <div> 
@@ -29,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>
                         </div>
                     </div>
-				</div>	
-            `;
+                `;
 
                 moviesContainer.appendChild(movieItem);
             });
         })
         .catch(error => console.error('Error fetching JSON data:', error));
 });
+
