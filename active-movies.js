@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 movieItem.className = 'movie-item item';
 
                 movieItem.innerHTML = `
+                    <div class="movie-item item">
                     <div class="item-inner">
                         <a href="${movie.href}" class="cover">
                             <div> 
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <span>${movie.year} - ${movie.duration}</span> 
                             </div>
                         </div>
+                    </div>
                     </div>
                 `;
 
