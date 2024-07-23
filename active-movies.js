@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const moviesContainer = document.getElementById('movies-container');
-    const jsonUrl = 'https://rawcdn.githack.com/spacetoonlinks/hosting/a8a886b97c458596cc43d045fc5a5b11c0313a27/active-movies.json';
+    const jsonUrl = 'https://raw.githubusercontent.com/spacetoonlinks/hosting/main/active-movies.json';
 
     fetch(jsonUrl)
         .then(response => response.json())
