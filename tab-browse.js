@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const trendingContainer = document.getElementById('trending-container');
+    const trendingContainer = document.getElementById('browsing-container');
     const jsonUrl = 'https://raw.githubusercontent.com/spacetoonlinks/hosting/main/tab-browse.json'; 
 
     fetch(jsonUrl)
