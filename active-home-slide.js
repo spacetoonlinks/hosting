@@ -60,4 +60,31 @@
                         slidesContainer.appendChild(slideItem);
                     });
 
+			 // Initialize Swiper
+                    new Swiper('.swiper-container', {
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                        loop: true,
+                        breakpoints: {
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 30,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 40,
+                            },
+                        },
+                    });
+                })
+                .catch(error => console.error('Error fetching JSON data:', error));
+        });
                 
